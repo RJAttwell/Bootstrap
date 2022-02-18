@@ -1,0 +1,215 @@
+body {
+  font-family: "Bebas Neue";
+}
+
+h1 {
+  font-family: "Montserrat";
+  color: whitesmoke;
+  padding-top: 20px;
+  font-size: 4.6rem;
+  /* Sets distance between lines of text */
+  line-height: 1.5;
+  /* Sets how thick or thin letters in font */
+  font-weight: 900;
+}
+
+h2 {
+  font-family: "Montserrat";
+  font-size: 3rem;
+  line-height: 3.5rem;
+}
+
+h3 {
+  font-family: "Montserrat";
+}
+
+#title {
+  background-color: #ff4c68;
+}
+
+.container-fluid {
+  /* First number is padding on top, second is padding left and right, last is padding bottom */
+  padding: 3% 15% 7%;
+}
+
+/* Navigation Bar */
+
+.navbar {
+  padding: 0 0 4.5rem;
+}
+
+.navbar-brand {
+  font-family: "Rowdies";
+  font-size: 2.3rem;
+}
+
+.nav-item {
+  padding: 0 19px;
+  position: relative;
+  left: 750px;
+  padding-bottom: 5px;
+}
+
+.nav-link {
+  font-family: "Rowdies";
+  font-size: 1.2rem;
+}
+
+/* Buttons */
+
+.download-button {
+  margin: 5% 3% 5% 0;
+  font-family: "Roboto";
+}
+
+.download-button1{
+    margin: 1% 1% 0% 1%;
+    font-family: "Roboto";
+}
+
+.download-button2{
+    margin: 1% 1% 0% 1%;
+    font-family: "Roboto";
+}
+
+/* Images */
+
+.iphonepic {
+  width: 20%;
+  /* Rotates image */
+  transform: rotate(21deg);
+  /* Removes element from HTML flow */
+  position: absolute;
+  right: 26%;
+  top: 25%;
+}
+
+.checkmark {
+  color: #ff4c68;
+  font-size: 4rem;
+  padding-bottom: 10px;
+}
+
+.bullseye {
+  color: #ff4c68;
+  font-size: 4rem;
+  padding-bottom: 10px;
+}
+
+.heart {
+  color: #ff4c68;
+  font-size: 4rem;
+  padding-bottom: 10px;
+}
+
+.checkmark:hover {
+  color: #f31839;
+}
+
+.bullseye:hover {
+  color: #f31839;
+}
+
+.heart:hover {
+  color: #f31839;
+}
+
+.dogphoto {
+  width: 14%;
+  height: 14%;
+  border-radius: 100%;
+  margin: 20px;
+}
+
+.pressimage {
+  width: 13%;
+  height: 13%;
+  margin: 20px 20px 50px;
+}
+
+/* Features Section */
+
+#features {
+  padding: 7% 15%;
+  text-align: center;
+  background-color: white;
+    /* Keeps the element in the HTML flow */
+  position: relative;
+  /* Must have a z-index greater than 0 to be above the image */
+  /* Doesn't even need to have a z-index due to stacking order */
+  z-index: 1;
+}
+
+.featurestext {
+  font-size: 17px;
+  color: #acacac;
+  font-family: "Montserrat";
+}
+
+.feature-box {
+  padding: 5%;
+}
+
+/* Testimonial Section */
+
+#testimonials {
+  padding: 7% 15%;
+  text-align: center;
+  background-color: #ef8172;
+  color: whitesmoke;
+}
+
+#press {
+  background-color: #ef8172;
+  text-align: center;
+  padding-bottom: 3%;
+}
+
+.carousel-item {
+  padding: 7% 12%;
+}
+
+/* Pricing Section */
+
+#pricing {
+  padding: 100px;
+}
+
+.pricing-column {
+  padding: 3% 2%;
+}
+
+/* CTA Section */
+
+#cta {
+  text-align: center;
+  background-color: #ff4c68;
+  color: whitesmoke;
+  padding: 5% 13%;
+}
+
+#footer {
+  text-align: center;
+  padding: 5% 13%;
+}
+
+.cta-text{
+  font-size: 3.5rem;
+  font-family: "Montserrat";
+  font-weight: 800;
+  padding: 2% 15% 2%;
+}
+
+/* Code that runs when our viewpoint is 1028px or smaller */
+@media (max-width: 1050px){
+
+  #title{
+    text-align: center;
+  }
+
+  .iphonepic{
+    position: static;
+    transform: rotate(0);
+
+  }
+}
