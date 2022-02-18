@@ -28,7 +28,8 @@ h3 {
 }
 
 .container-fluid {
-  padding: 3% 15%;
+  /* First number is padding on top, second is padding left and right, last is padding bottom */
+  padding: 3% 15% 7%;
 }
 
 /* Navigation Bar */
@@ -61,17 +62,26 @@ h3 {
   font-family: "Roboto";
 }
 
-/* .download-button1{
-    margin: 1% 2% 1% 0;
+.download-button1{
+    margin: 1% 1% 0% 1%;
     font-family: "Roboto";
-} */
+}
+
+.download-button2{
+    margin: 1% 1% 0% 1%;
+    font-family: "Roboto";
+}
 
 /* Images */
 
 .iphonepic {
-  width: 56%;
+  width: 20%;
   /* Rotates image */
-  transform: rotate(25deg);
+  transform: rotate(21deg);
+  /* Removes element from HTML flow */
+  position: absolute;
+  right: 26%;
+  top: 25%;
 }
 
 .checkmark {
@@ -122,6 +132,12 @@ h3 {
 #features {
   padding: 7% 15%;
   text-align: center;
+  background-color: white;
+    /* Keeps the element in the HTML flow */
+  position: relative;
+  /* Must have a z-index greater than 0 to be above the image */
+  /* Doesn't even need to have a z-index due to stacking order */
+  z-index: 1;
 }
 
 .featurestext {
@@ -167,8 +183,33 @@ h3 {
 
 #cta {
   text-align: center;
+  background-color: #ff4c68;
+  color: whitesmoke;
+  padding: 5% 13%;
 }
 
 #footer {
   text-align: center;
+  padding: 5% 13%;
+}
+
+.cta-text{
+  font-size: 3.5rem;
+  font-family: "Montserrat";
+  font-weight: 800;
+  padding: 2% 15% 2%;
+}
+
+/* Code that runs when our viewpoint is 1028px or smaller */
+@media (max-width: 1050px){
+
+  #title{
+    text-align: center;
+  }
+
+  .iphonepic{
+    position: static;
+    transform: rotate(0);
+
+  }
 }
