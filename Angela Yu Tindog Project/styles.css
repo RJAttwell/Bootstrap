@@ -1,8 +1,22 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Bebas Neue";
 }
 
-h1 {
+h1, h2, h3, h4, h5, h6{
+  font-family: "Montserrat";
+}
+
+/* Title Section */
+
+#title {
+  background-color: #ff4c68;
+}
+
+.big-heading {
   font-family: "Montserrat";
   color: whitesmoke;
   padding-top: 20px;
@@ -11,20 +25,6 @@ h1 {
   line-height: 1.5;
   /* Sets how thick or thin letters in font */
   font-weight: 900;
-}
-
-h2 {
-  font-family: "Montserrat";
-  font-size: 3rem;
-  line-height: 3.5rem;
-}
-
-h3 {
-  font-family: "Montserrat";
-}
-
-#title {
-  background-color: #ff4c68;
 }
 
 .container-fluid {
@@ -57,19 +57,16 @@ h3 {
 
 /* Buttons */
 
+/* Buttons from title section */
 .download-button {
   margin: 5% 3% 5% 0;
   font-family: "Roboto";
 }
 
-.download-button1{
-    margin: 1% 1% 0% 1%;
-    font-family: "Roboto";
-}
-
-.download-button2{
-    margin: 1% 1% 0% 1%;
-    font-family: "Roboto";
+/* Buttons from CTA section */
+.download-button-cta {
+  margin: 1% 1% 0% 1%;
+  font-family: "Roboto";
 }
 
 /* Images */
@@ -133,7 +130,7 @@ h3 {
   padding: 7% 15%;
   text-align: center;
   background-color: white;
-    /* Keeps the element in the HTML flow */
+  /* Keeps the element in the HTML flow */
   position: relative;
   /* Must have a z-index greater than 0 to be above the image */
   /* Doesn't even need to have a z-index due to stacking order */
@@ -169,6 +166,11 @@ h3 {
   padding: 7% 12%;
 }
 
+.testimonial-text{
+  font-size: 3rem;
+  line-height: 3.5rem;
+}
+
 /* Pricing Section */
 
 #pricing {
@@ -177,6 +179,11 @@ h3 {
 
 .pricing-column {
   padding: 3% 2%;
+}
+
+.pricing-text-header{
+  font-size: 3rem;
+  line-height: 3.5rem;
 }
 
 /* CTA Section */
@@ -188,28 +195,42 @@ h3 {
   padding: 5% 13%;
 }
 
-#footer {
-  text-align: center;
-  padding: 5% 13%;
-}
-
-.cta-text{
+.cta-text {
   font-size: 3.5rem;
   font-family: "Montserrat";
   font-weight: 800;
   padding: 2% 15% 2%;
 }
 
-/* Code that runs when our viewpoint is 1028px or smaller */
-@media (max-width: 1050px){
+/* Footer Section */
 
-  #title{
+#footer {
+  text-align: center;
+  padding: 3% 10%;
+}
+
+.copyright-text {
+  margin-top: 20px;
+  color: #acacac;
+}
+
+.footer-icon {
+  font-size: 25px;
+  padding: 0 1% 0% 1%;
+}
+
+.footer-icon:hover {
+  color: #acacac;
+}
+
+/* Code that runs when our viewpoint is 1028px or smaller */
+@media (max-width: 1050px) {
+  #title {
     text-align: center;
   }
 
-  .iphonepic{
+  .iphonepic {
     position: static;
     transform: rotate(0);
-
   }
 }
