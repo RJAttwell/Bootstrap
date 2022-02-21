@@ -4,21 +4,22 @@ html {
 
 body {
   font-family: "Bebas Neue";
+  text-align: center;
 }
 
-h1, h2, h3, h4, h5, h6{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Montserrat";
 }
 
 /* Title Section */
 
-#title {
-  background-color: #ff4c68;
-}
-
 .big-heading {
   font-family: "Montserrat";
-  color: whitesmoke;
   padding-top: 20px;
   font-size: 4.6rem;
   /* Sets distance between lines of text */
@@ -27,9 +28,20 @@ h1, h2, h3, h4, h5, h6{
   font-weight: 900;
 }
 
-.container-fluid {
+/* Combined Selectors */
+#title .container-fluid {
   /* First number is padding on top, second is padding left and right, last is padding bottom */
   padding: 3% 15% 7%;
+  text-align: left;
+}
+
+.white-section {
+  background-color: #fff;
+}
+
+.coloured-section {
+  background-color: #ff4c68;
+  color: whitesmoke;
 }
 
 /* Navigation Bar */
@@ -81,32 +93,16 @@ h1, h2, h3, h4, h5, h6{
   top: 25%;
 }
 
+.bullseye,
+.heart,
 .checkmark {
   color: #ff4c68;
   font-size: 4rem;
   padding-bottom: 10px;
 }
 
-.bullseye {
-  color: #ff4c68;
-  font-size: 4rem;
-  padding-bottom: 10px;
-}
-
-.heart {
-  color: #ff4c68;
-  font-size: 4rem;
-  padding-bottom: 10px;
-}
-
-.checkmark:hover {
-  color: #f31839;
-}
-
-.bullseye:hover {
-  color: #f31839;
-}
-
+.checkmark:hover,
+.bullseye:hover,
 .heart:hover {
   color: #f31839;
 }
@@ -128,8 +124,6 @@ h1, h2, h3, h4, h5, h6{
 
 #features {
   padding: 7% 15%;
-  text-align: center;
-  background-color: white;
   /* Keeps the element in the HTML flow */
   position: relative;
   /* Must have a z-index greater than 0 to be above the image */
@@ -151,14 +145,11 @@ h1, h2, h3, h4, h5, h6{
 
 #testimonials {
   padding: 7% 15%;
-  text-align: center;
   background-color: #ef8172;
-  color: whitesmoke;
 }
 
 #press {
   background-color: #ef8172;
-  text-align: center;
   padding-bottom: 3%;
 }
 
@@ -166,7 +157,7 @@ h1, h2, h3, h4, h5, h6{
   padding: 7% 12%;
 }
 
-.testimonial-text{
+.testimonial-text {
   font-size: 3rem;
   line-height: 3.5rem;
 }
@@ -181,7 +172,7 @@ h1, h2, h3, h4, h5, h6{
   padding: 3% 2%;
 }
 
-.pricing-text-header{
+.pricing-text-header {
   font-size: 3rem;
   line-height: 3.5rem;
 }
@@ -189,9 +180,6 @@ h1, h2, h3, h4, h5, h6{
 /* CTA Section */
 
 #cta {
-  text-align: center;
-  background-color: #ff4c68;
-  color: whitesmoke;
   padding: 5% 13%;
 }
 
@@ -205,7 +193,6 @@ h1, h2, h3, h4, h5, h6{
 /* Footer Section */
 
 #footer {
-  text-align: center;
   padding: 3% 10%;
 }
 
